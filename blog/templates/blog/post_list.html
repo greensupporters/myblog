@@ -1,1 +1,11 @@
-<b>테스트</b>
+<h1><b>테스트</b></h1>
+<ul>
+{% for post in posts %}
+	<li>
+		<b>{{post.published_date}}</b><br>
+		<b>{{post.title}}</b><br>
+		<b>{{post.text|linebreaksbr}}</b><br>
+		<p>{{ posts }}</p>
+	</li>
+{% endfor%}
+</ul>
